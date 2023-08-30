@@ -1,0 +1,68 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="Calculator.MainWindow"
+        Title="Calculator" Width="300" Height="600">
+
+	<Grid>
+		<StackPanel>
+			<TextBox Name="ResultBox" IsReadOnly="True" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="10" TextAlignment="Right" FontSize="36" Height = "60"/>
+
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30">
+			</StackPanel>
+
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+				<Button Content="⌫" FontSize="18" Width="140" Height="60" Click="BackspaceButton_Click"/>
+				<Button Content="C" FontSize="18" Width="140" Height="60" Click="ClearButton_Click"/>
+			</StackPanel>
+
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+				<Button Content="x²" FontSize="18" Width="70" Height="60" Click="AdvancedFunctionButton_Click"/>
+				<Button Content="√x" FontSize="18" Width="70" Height="60" Click="AdvancedFunctionButton_Click"/>
+				<Button Content="sin" FontSize="18" Width="70" Height="60" Click="AdvancedFunctionButton_Click"/>
+				<Button Content="cos" FontSize="18" Width="70" Height="60" Click="AdvancedFunctionButton_Click"/>
+			</StackPanel>
+
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+				<Button Content="log10" FontSize="18" Width="70" Height="60" Click="AdvancedFunctionButton_Click"/>
+				<Button Content="ln" FontSize="18" Width="70" Height="60" Click="AdvancedFunctionButton_Click"/>
+				<Button Content="tan" FontSize="18" Width="70" Height="60" Click="AdvancedFunctionButton_Click"/>
+				<Button Content="cot" FontSize="18" Width="70" Height="60" Click="AdvancedFunctionButton_Click"/>
+			</StackPanel>
+
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+				<Button Content="abs" FontSize="18" Width="70" Height="60" Click="AdvancedFunctionButton_Click"/>
+				<Button Content="!" FontSize="18" Width="70" Height="60" Click="AdvancedFunctionButton_Click"/>
+				<Button Content="pi" FontSize="18" Width="70" Height="60" Click="AdvancedFunctionButton_Click"/>
+				<Button Content="e" FontSize="18" Width="70" Height="60" Click="AdvancedFunctionButton_Click"/>
+			</StackPanel>
+
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+				<Button Content="7" FontSize="18" Width="70" Height="60" Click="NumberButton_Click"/>
+				<Button Content="8" FontSize="18" Width="70" Height="60" Click="NumberButton_Click"/>
+				<Button Content="9" FontSize="18" Width="70" Height="60" Click="NumberButton_Click"/>
+				<Button Content="/" FontSize="18" Width="70" Height="60" Click="OperatorButton_Click"/>
+			</StackPanel>
+
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+				<Button Content="4" FontSize="18" Width="70" Height="60" Click="NumberButton_Click"/>
+				<Button Content="5" FontSize="18" Width="70" Height="60" Click="NumberButton_Click"/>
+				<Button Content="6" FontSize="18" Width="70" Height="60" Click="NumberButton_Click"/>
+				<Button Content="*" FontSize="18" Width="70" Height="60" Click="OperatorButton_Click"/>
+			</StackPanel>
+
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+				<Button Content="1" FontSize="18" Width="70" Height="60" Click="NumberButton_Click"/>
+				<Button Content="2" FontSize="18" Width="70" Height="60" Click="NumberButton_Click"/>
+				<Button Content="3" FontSize="18" Width="70" Height="60" Click="NumberButton_Click"/>
+				<Button Content="-" FontSize="18" Width="70" Height="60" Click="OperatorButton_Click"/>
+			</StackPanel>
+
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+				<Button Content="0" FontSize="18" Width="70" Height="60" Click="NumberButton_Click"/>
+				<Button Content="." FontSize="18" Width="70" Height="60" Click="DecimalButton_Click"/>
+				<Button Content="=" FontSize="18" Width="70" Height="60" Click="EqualsButton_Click"/>
+				<Button Content="+" FontSize="18" Width="70" Height="60" Click="OperatorButton_Click"/>
+			</StackPanel>
+		</StackPanel>
+	</Grid>
+</Window>
